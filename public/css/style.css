@@ -1,0 +1,147 @@
+/* General Styles */
+:root {
+    --primary-color: #4a90e2; /* Blue */
+    --secondary-color: #357abd; /* Darker Blue */
+    --background-color: #f5f7fa; /* Light Gray */
+    --text-color: #333; /* Dark Gray */
+    --white: #ffffff; /* White */
+    --shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle Shadow */
+    --border-radius: 10px; /* Rounded Corners */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  /* Header */
+  header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    padding: 20px;
+    text-align: center;
+    box-shadow: var(--shadow);
+  }
+  
+  header h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+  }
+  
+  /* Main Content */
+  main {
+    padding: 40px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* URL Input Section */
+  .url-input-section {
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .url-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  #url-input {
+    width: 100%;
+    padding: 15px;
+    font-size: 1rem;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    outline: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  #url-input:focus {
+    border-color: var(--secondary-color);
+  }
+  
+  #download-btn {
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 500;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  #download-btn:hover {
+    background-color: var(--secondary-color);
+    transform: translateY(-2px);
+  }
+  
+  #download-btn:active {
+    transform: translateY(0);
+  }
+  
+  /* Supported Platforms Section */
+  .supported-platforms {
+    text-align: center;
+    margin: 60px 0;
+  }
+  
+  .supported-platforms h2 {
+    font-size: 1.75rem;
+    margin-bottom: 20px;
+  }
+  
+  .platform-icons {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .platform-icons img {
+    width: 80px;
+    height: 80px;
+    transition: transform 0.3s ease;
+  }
+  
+  .platform-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: var(--primary-color);
+    color: var(--white);
+    margin-top: 40px;
+    box-shadow: var(--shadow);
+  }
+  
+  footer a {
+    margin: 0 15px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  footer a:hover {
+    color: var(--secondary-color);
+  }
